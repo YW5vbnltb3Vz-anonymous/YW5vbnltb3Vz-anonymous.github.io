@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pl">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="zdjecia.css">
+        <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+        <title>SGR</title>
+    </head>
+    <body>
+        <div id="header">
+            <a href="Strona SGR.html">SZKOLNA GRUPA RATOWNICZA</a>
+        </div>
+        <div id="banner"></div>
+        <div id="logo"></div>
+        <input id="toggle" type="checkbox"></input>
+        <label for="toggle" class="hamburger">
+            <div class="top-bun"></div>
+            <div class="meat"></div>
+            <div class="bottom-bun"></div>
+        </label>
+        <div class="nav">
+            <div class="nav-wrapper">
+                <div id="menu-nav">
+                    <a href="Strona SGR.html">
+                        <div id="ion-icon">
+                            <ion-icon name="globe-outline"></ion-icon>
+                        </div>
+                            STRONA GŁÓWNA
+                    </a><br>
+                    <a href="Lokalizacja SGR.html">
+                        <div id="ion-icon">
+                          <ion-icon name="location-outline"></ion-icon>
+                        </div>
+                            LOKALIZACJA
+                    </a><br>
+                    <a href="O SGR.html">
+                        <div id="ion-icon">
+                            <ion-icon name="information-circle-outline"></ion-icon>
+                        </div>
+                            O NAS
+                    </a><br>
+                    <a href="Kontakt SGR.html">
+                        <div id="ion-icon">
+                            <ion-icon name="chatbubbles-outline"></ion-icon>
+                        </div>
+                            KONTAKT
+                    </a><br>
+                    <a href="Wydarzenia SGR.html">
+                        <div id="ion-icon">
+                            <ion-icon name="calendar-number-outline"></ion-icon>
+                        </div>
+                            WYDARZENIA
+                    </a><br>
+                </div>
+            </div>
+        </div>
+        <!-- gallery -->
+
+        <div class="gallery-container">
+            <h1>GALERIA ZDJĘĆ</h1>
+        </div>
+
+         <div class="full-img" id="fullImgBox">
+            <img src="gallery1.jpg" id="fullImg">
+            <span onclick="closeFullImg()">X</span>
+        </div>
+
+        <div class="gallery-wrap">
+            <img src="arrow2.svg" id="backBtn">
+            <div class="gallery-cn">
+            <div class="box">
+                <span><img src="gallery1.jpg" onclick="openFullImg(this.src)"></span>
+                <span><img src="gallery2.jpg" onclick="openFullImg(this.src)"></span>
+                <span><img src="gallery3.jpg" onclick="openFullImg(this.src)"></span>
+            </div>
+            <div class="box">
+                <span><img src="gallery4.jpg" onclick="openFullImg(this.src)"></span>
+                <span><img src="gallery5.jpg" onclick="openFullImg(this.src)"></span>
+                <span><img src="gallery6.jpg" onclick="openFullImg(this.src)"></span>
+            </div>
+            <div class="box">
+                <span><img src="gallery7.jpg" onclick="openFullImg(this.src)"></span>
+                <span><img src="gallery8.jpg" onclick="openFullImg(this.src)"></span>
+                <span><img src="gallery9.jpg" onclick="openFullImg(this.src)"></span>
+            </div>
+            <div class="box">
+                <span><img src="gallery10.jpg" onclick="openFullImg(this.src)"></span>
+                <span><img src="gallery11.jpg" onclick="openFullImg(this.src)"></span>
+                <span><img src="gallery12.jpg" onclick="openFullImg(this.src)"></span>
+            </div>
+            <div class="box">
+                <span><img src="gallery13.jpg" onclick="openFullImg(this.src)"></span>
+                <span><img src="gallery14.jpg" onclick="openFullImg(this.src)"></span>
+                <span><img src="gallery15.jpg" onclick="openFullImg(this.src)"></span>
+            </div>
+            <div class="box">
+                <span><img src="gallery16.jpg" onclick="openFullImg(this.src)"></span>
+                <span><img src="gallery17.jpg" onclick="openFullImg(this.src)"></span>
+                <span><img src="gallery18.jpg" onclick="openFullImg(this.src)"></span>
+            </div>
+        </div>
+        <img src="arrow1.svg" id="nextBtn">
+        </div>
+        <script src="gallery-scroll.js"></script>
+        <script src="img-onclick.js"></script>
+    </body>
+</html>
